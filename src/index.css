@@ -129,7 +129,7 @@ html {
 
 /* Subtle drop-shadow for elevated stepper */
 .stepper-elevated {
-  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
+  box-shadow: none;
   border-radius: 16px;
 }
 
