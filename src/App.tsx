@@ -60,7 +60,7 @@ function App() {
                   e.preventDefault();
                   scrollToLeadForm(96);
                 }}
-                className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2.5 rounded-md text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 shadow-md"
               >
                 ✨ Send me creator matches →
               </button>
@@ -85,7 +85,7 @@ function App() {
                     scrollToLeadForm(96);
                     setIsMobileMenuOpen(false);
                   }}
-                  className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2.5 rounded-md text-sm font-semibold text-center"
+                  className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full text-sm font-semibold text-center shadow-md"
                 >
                   ✨ Send me creator matches →
                 </button>
@@ -137,7 +137,7 @@ function App() {
             </div>
             <button
               type="submit"
-              className="mt-3 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-gradient-to-r from-pink-500 to-purple-600 text-white text-base font-medium hover:opacity-90 transition-all duration-300"
+              className="mt-3 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white text-base font-medium hover:opacity-90 transition-all duration-300 shadow-md"
             >
               ✨ Send me creator matches →
             </button>
