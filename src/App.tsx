@@ -39,23 +39,18 @@ function App() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo and Navigation */}
-            <div className="flex items-center gap-3">
-              <div className="flex items-center gap-2">
-                <img
-                  src="/Storyclash-ai-grau.svg"
-                  alt="Storyclash.ai"
-                  className="h-8 w-auto"
-                />
-                <img
-                  src="/assets/Creator Persona alleine.svg"
-                  alt="Creator Personas"
-                  className="h-7 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
-                />
-              </div>
-              <span className="hidden sm:inline-block text-[#C8C9CF] opacity-70 mx-3 text-lg font-light" aria-hidden="true">|</span>
-              <span className="hidden sm:inline-block text-[#7424B3] text-base font-semibold tracking-[-0.01em]">
-                Creator Personas
-              </span>
+            <div className="flex items-center">
+              <img
+                src="/Storyclash-ai-grau.svg"
+                alt="Storyclash.ai"
+                className="h-7 w-auto"
+              />
+              <div className="border-l border-gray-200 h-5 mx-3" aria-hidden="true"></div>
+              <img
+                src="/assets/Creator Persona alleine.svg"
+                alt="Creator Personas"
+                className="h-7 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
+              />
             </div>
 
             {/* Desktop CTA */}
