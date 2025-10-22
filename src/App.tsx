@@ -122,7 +122,7 @@ function App() {
             </h1>
 
             <p className="mx-auto mt-6 md:mt-8 max-w-2xl text-base sm:text-lg md:text-xl leading-relaxed text-[#233C42]/75">
-              The Storyclash AI analyzes your products, competition, and influencer marketing footprint to surface creators who perfectly match your brand, without any manual research. No filters, no settings: just fool-proof recommendations. Try it for free.
+              Storyclash AI surfaces creators who perfectly match your brand, without any manual research. No filters, no settings: just fool-proof recommendations. Try it free.
             </p>
 
             <div className="mx-auto mt-8 md:mt-10 lg:mt-12 max-w-2xl">
