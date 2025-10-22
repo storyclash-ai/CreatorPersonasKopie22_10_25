@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Play, ArrowRight, Menu, X, Zap, TrendingUp, Brain } from 'lucide-react';
+import { ChevronDown, Play, ArrowRight, Menu, X } from 'lucide-react';
 import HowItWorks from './components/HowItWorks';
 import LogoMarquee from './components/LogoMarquee';
 import LeadForm from './components/LeadForm';
@@ -170,28 +170,77 @@ function App() {
 
           {/* Feature Columns */}
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200">
-            <div className="py-8 md:py-0 md:px-8 lg:px-12 text-center md:text-left">
-              <Zap className="w-6 h-6 icon-muted-violet mb-4 mx-auto md:mx-0" aria-hidden="true" />
-              <h3 className="text-xl md:text-2xl font-semibold text-[#1B1C1E] mb-3">100x Faster Searches</h3>
-              <p className="text-[#4A4C57] leading-relaxed">
-                Use rich persona profiles to automate discovery. Surface ideal creators in seconds instead of spending hours on manual research.
-              </p>
+            <div className="py-8 md:py-0 md:px-8 lg:px-12">
+              <div className="flex items-start gap-4">
+                <svg
+                  className="h-9 w-9 text-violet-500 stroke-[3]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M13 2L3 14h7l-1 8 11-13h-7l1-7z" />
+                </svg>
+
+                <div>
+                  <h3 className="text-2xl font-semibold tracking-tight text-[#233C42]">
+                    Faster Creator Searches
+                  </h3>
+                  <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[96px]">
+                    Use rich persona profiles to automate discovery and surface ideal creators in seconds,
+                    so your team can focus on strategy instead of spreadsheets.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="py-8 md:py-0 md:px-8 lg:px-12 text-center md:text-left">
-              <TrendingUp className="w-6 h-6 icon-muted-violet mb-4 mx-auto md:mx-0" aria-hidden="true" />
-              <h3 className="text-xl md:text-2xl font-semibold text-[#1B1C1E] mb-3">More Revenue Per Creator</h3>
-              <p className="text-[#4A4C57] leading-relaxed">
-                Our algorithm identifies high-performing creators based on what actually drives results in your industry. Customers see 20% more revenue per collaboration.
-              </p>
+            <div className="py-8 md:py-0 md:px-8 lg:px-12">
+              <div className="flex items-start gap-4">
+                <svg
+                  className="h-9 w-9 text-violet-500 stroke-[3]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M3 17l6-6 4 4 7-7" />
+                  <path d="M21 21H3" />
+                </svg>
+
+                <div>
+                  <h3 className="text-2xl font-semibold tracking-tight text-[#233C42]">
+                    Grow Revenue per Creator
+                  </h3>
+                  <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[96px]">
+                    Identify high-performing creators based on what actually drives results in your
+                    industry. Teams typically see around 20% more revenue per collaboration.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="py-8 md:py-0 md:px-8 lg:px-12 text-center md:text-left">
-              <Brain className="w-6 h-6 icon-muted-violet mb-4 mx-auto md:mx-0" aria-hidden="true" />
-              <h3 className="text-xl md:text-2xl font-semibold text-[#1B1C1E] mb-3">AI-Powered Insights</h3>
-              <p className="text-[#4A4C57] leading-relaxed">
-                Get instant insights into why specific creators match your brand - including audience fit, content style, and engagement potential. No spreadsheets. Just clear, actionable data.
-              </p>
+            <div className="py-8 md:py-0 md:px-8 lg:px-12">
+              <div className="flex items-start gap-4">
+                <svg
+                  className="h-9 w-9 text-violet-500 stroke-[3]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M9 9a3 3 0 016 0v1h1a3 3 0 013 3v1a6 6 0 01-6 6h-2a6 6 0 01-6-6v-1a3 3 0 013-3h1V9z" />
+                </svg>
+
+                <div>
+                  <h3 className="text-2xl font-semibold tracking-tight text-[#233C42]">
+                    AI-Powered Insights
+                  </h3>
+                  <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[96px]">
+                    Understand why creators match your brand — audience fit, content style, and
+                    engagement potential — and act on clear, actionable data without spreadsheets.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
