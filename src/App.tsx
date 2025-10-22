@@ -118,27 +118,27 @@ function App() {
           <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-200/20 to-purple-200/20 rounded-full blur-3xl"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-pink-200/20 to-purple-200/20 rounded-full blur-2xl"></div>
         </div>
-        
+
         <div className="mx-auto max-w-[980px] px-4 pt-56 pb-40 text-center relative z-10">
           {/* Brand Icon */}
           <div className="flex justify-center">
-            <img 
-              src="/Storyclash_ai_logo_icons copy.svg" 
-              alt="Storyclash AI Icon" 
+            <img
+              src="/Storyclash_ai_logo_icons copy.svg"
+              alt="Storyclash AI Icon"
               className="h-10 w-auto"
             />
           </div>
-          
+
           {/* Headline */}
           <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight tracking-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#E40DA8] to-[#7424B3]">Creator</span> Discovery<br />That <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#E40DA8] to-[#7424B3]">Knows</span> Your Brand <br />Better Than You Do
           </h1>
-          
+
           {/* Subline */}
           <p className="mt-6 text-lg text-gray-500 max-w-[760px] mx-auto leading-relaxed">
             Our AI decodes your products, competitive landscape, and marketing footprint to extract your brand DNA. Then builds creator personas so accurate, the recommendations feel like mind-reading. Try it out yourself and get creator matches into your inbox.
           </p>
-          
+
           {/* Input and Button Form */}
           <form onSubmit={handleHeroSubmit} className="mt-8">
             <div className="mx-auto w-full max-w-[560px]">
@@ -157,10 +157,10 @@ function App() {
               ✨ Send me creator matches →
             </button>
           </form>
-          
+
           {/* Helper text */}
           <p className="mt-3 text-xs text-gray-400">
-            
+
           </p>
         </div>
       </section>
@@ -288,18 +288,6 @@ function App() {
         </div>
       </section>
 
-      {/* Logo Marquee */}
-      <LogoMarquee />
-
-      {/* Lead Form */}
-      <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-6">
-          <p className="text-center text-sm text-gray-500 mb-8">
-          </p>
-          <LeadForm prefillValue={heroInput} />
-        </div>
-      </section>
-
       {/* Trusted Brands Section */}
       <section aria-label="Trust teaser" className="relative mt-20 md:mt-24">
         {/* Soft divider / skyline */}
@@ -320,6 +308,18 @@ function App() {
         <div className="h-12 md:h-16 bg-gradient-to-b from-[#FAFAFB] to-white" />
       </section>
 
+      {/* Logo Marquee */}
+      <LogoMarquee />
+
+      {/* Lead Form */}
+      <section className="py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-6">
+          <p className="text-center text-sm text-gray-500 mb-8">
+          </p>
+          <LeadForm prefillValue={heroInput} />
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-50 border-t border-gray-100 py-6">
         <div className="max-w-4xl mx-auto text-center">
@@ -335,7 +335,7 @@ function App() {
             </a>
           </p>
 
-          {/* --- Legal Footer --- */}
+          {/* Legal Footer */}
           <div className="mt-3 text-center text-xs text-gray-500">
             <a
               href="https://www.storyclash.com/privacy"
