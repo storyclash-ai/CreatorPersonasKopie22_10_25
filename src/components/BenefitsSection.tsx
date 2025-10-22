@@ -28,11 +28,11 @@ export default function BenefitsSection() {
           </div>
 
           <h3 className="text-2xl font-semibold tracking-tight text-[#233C42]">
-            100× Faster Discovery
+            Faster Creator Discovery
           </h3>
           <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[100px]">
-            Automate research with rich persona profiles to surface ideal creators in
-            seconds — not hours of manual work.
+            Use rich persona profiles to automate discovery and surface ideal creators in seconds
+            so your team can focus on strategy instead of spreadsheets.
           </p>
         </div>
 
@@ -44,11 +44,11 @@ export default function BenefitsSection() {
           </div>
 
           <h3 className="text-2xl font-semibold tracking-tight text-[#233C42]">
-            20% More Revenue per Creator
+            More Revenue per Creator
           </h3>
           <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[100px]">
-            Identify high-performing creators based on what truly drives results in your
-            industry. Customers see ~20% more revenue per collaboration.
+            Identify high-performing creators based on what really drives results in your industry.
+            Teams typically see around 20% more revenue per collaboration.
           </p>
         </div>
 
@@ -60,11 +60,11 @@ export default function BenefitsSection() {
           </div>
 
           <h3 className="text-2xl font-semibold tracking-tight text-[#233C42]">
-            AI-Powered Creator Insights
+            AI-Powered Insights
           </h3>
           <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[100px]">
-            Understand why creators match your brand — audience fit, content style, and
-            engagement potential — with clear, actionable data.
+            Understand why creators match your brand — audience fit, content style, and engagement
+            potential — and act on clear, actionable data without spreadsheets.
           </p>
         </div>
       </div>
