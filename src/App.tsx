@@ -5,13 +5,10 @@ import LogoMarquee from './components/LogoMarquee';
 import LeadForm from './components/LeadForm';
 import { scrollToLeadForm } from './utils/scrollTo';
 
-// --- Pretty gradient icon badge used in the benefits section ---
 function IconBadge({ children }: { children: React.ReactNode }) {
   return (
     <div className="shrink-0">
-      {/* Outer gradient ring */}
       <div className="rounded-full p-[2.5px] bg-gradient-to-br from-[#FF59D2] via-[#A855F7] to-[#6D28D9] shadow-[0_6px_20px_rgba(108,43,217,0.25)]">
-        {/* Inner white plate */}
         <div className="h-14 w-14 md:h-16 md:w-16 rounded-full bg-white/95 ring-1 ring-black/5 flex items-center justify-center">
           {children}
         </div>
@@ -30,10 +27,8 @@ function App() {
     const input = formData.get('domain') as string;
     setHeroInput(input);
 
-    // Prüfe ob es eine Email oder eine Domain/URL ist
     const isEmail = input.includes('@');
 
-    // Setze URL Parameter für HubSpot Vorausfüllung
     const url = new URL(window.location.href);
     if (isEmail) {
       url.searchParams.set('email', input);
@@ -49,11 +44,9 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Fixed Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            {/* Logo and Navigation */}
             <div className="flex items-center">
               <img
                 src="/Storyclash-ai-grau.svg"
@@ -68,7 +61,6 @@ function App() {
               />
             </div>
 
-            {/* Desktop CTA */}
             <div className="hidden md:block">
               <button
                 onClick={(e) => {
@@ -81,7 +73,6 @@ function App() {
               </button>
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="md:hidden p-2 text-gray-600 hover:text-gray-900 transition-colors"
@@ -90,7 +81,6 @@ function App() {
             </button>
           </div>
 
-          {/* Mobile Menu */}
           {isMobileMenuOpen && (
             <div className="md:hidden mt-4 pt-4 border-t border-gray-100">
               <div className="flex flex-col space-y-4">
@@ -110,9 +100,7 @@ function App() {
         </div>
       </header>
 
-      {/* Hero Section */}
       <section id="hero" className="relative min-h-[80vh] bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 overflow-hidden">
-        {/* Abstract background shapes */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-200/30 to-pink-200/30 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-200/20 to-purple-200/20 rounded-full blur-3xl"></div>
@@ -120,7 +108,6 @@ function App() {
         </div>
 
         <div className="mx-auto max-w-[980px] px-4 pt-56 pb-40 text-center relative z-10">
-          {/* Brand Icon */}
           <div className="flex justify-center">
             <img
               src="/Storyclash_ai_logo_icons copy.svg"
@@ -129,17 +116,14 @@ function App() {
             />
           </div>
 
-          {/* Headline */}
           <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight tracking-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#E40DA8] to-[#7424B3]">Creator</span> Discovery<br />That <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#E40DA8] to-[#7424B3]">Knows</span> Your Brand <br />Better Than You Do
           </h1>
 
-          {/* Subline */}
           <p className="mt-6 text-lg text-gray-500 max-w-[760px] mx-auto leading-relaxed">
             Our AI decodes your products, competitive landscape, and marketing footprint to extract your brand DNA. Then builds creator personas so accurate, the recommendations feel like mind-reading. Try it out yourself and get creator matches into your inbox.
           </p>
 
-          {/* Input and Button Form */}
           <form onSubmit={handleHeroSubmit} className="mt-8">
             <div className="mx-auto w-full max-w-[560px]">
               <input
@@ -158,22 +142,17 @@ function App() {
             </button>
           </form>
 
-          {/* Helper text */}
           <p className="mt-3 text-xs text-gray-400">
-
           </p>
         </div>
       </section>
 
-      {/* How It Works Component */}
       <div className="py-24">
         <HowItWorks />
       </div>
 
-      {/* Automation Benefits Section */}
       <section className="py-16 md:py-24 px-6 bg-[#FAFAFB] relative" style={{ boxShadow: 'inset 0 1px 0 rgba(0,0,0,0.03)' }}>
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1B1C1E] mb-4 leading-tight">
               Automate Creator Discovery and Save 10+ Hours Per Week
@@ -183,11 +162,9 @@ function App() {
             </p>
           </div>
 
-          {/* Feature Columns */}
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200">
             <div className="py-8 md:py-0 md:px-8 lg:px-12">
               <div className="flex flex-col items-center text-center">
-                {/* Icon oben */}
                 <div className="rounded-full p-[2px] bg-gradient-to-br from-[#FF59D2] via-[#A855F7] to-[#6D28D9] shadow-[0_6px_20px_rgba(108,43,217,0.25)] mb-5">
                   <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center">
                     <svg
@@ -205,12 +182,10 @@ function App() {
                   </div>
                 </div>
 
-                {/* Überschrift */}
                 <h3 className="text-2xl font-semibold text-[#233C42] leading-snug">
                   Faster Creator<br />Searches
                 </h3>
 
-                {/* Beschreibung */}
                 <p className="mt-3 text-[#233C42]/80 leading-relaxed max-w-xs">
                   Use rich persona profiles to automate discovery and surface ideal creators in seconds,
                   so your team can focus on strategy instead of spreadsheets.
@@ -220,7 +195,6 @@ function App() {
 
             <div className="py-8 md:py-0 md:px-8 lg:px-12">
               <div className="flex flex-col items-center text-center">
-                {/* Icon oben */}
                 <div className="rounded-full p-[2px] bg-gradient-to-br from-[#FF59D2] via-[#A855F7] to-[#6D28D9] shadow-[0_6px_20px_rgba(108,43,217,0.25)] mb-5">
                   <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center">
                     <svg
@@ -239,12 +213,10 @@ function App() {
                   </div>
                 </div>
 
-                {/* Überschrift */}
                 <h3 className="text-2xl font-semibold text-[#233C42] leading-snug">
                   Grow Revenue<br />per Creator
                 </h3>
 
-                {/* Beschreibung */}
                 <p className="mt-3 text-[#233C42]/80 leading-relaxed max-w-xs">
                   Identify high-performing creators based on what actually drives results in your
                   industry. Teams typically see around 20% more revenue per collaboration.
@@ -254,7 +226,6 @@ function App() {
 
             <div className="py-8 md:py-0 md:px-8 lg:px-12">
               <div className="flex flex-col items-center text-center">
-                {/* Icon oben */}
                 <div className="rounded-full p-[2px] bg-gradient-to-br from-[#FF59D2] via-[#A855F7] to-[#6D28D9] shadow-[0_6px_20px_rgba(108,43,217,0.25)] mb-5">
                   <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center">
                     <svg
@@ -272,12 +243,10 @@ function App() {
                   </div>
                 </div>
 
-                {/* Überschrift */}
                 <h3 className="text-2xl font-semibold text-[#233C42] leading-snug">
                   AI-Powered Creator<br />Insights
                 </h3>
 
-                {/* Beschreibung */}
                 <p className="mt-3 text-[#233C42]/80 leading-relaxed max-w-xs">
                   Understand why creators match your brand - audience fit, content style, and engagement
                   potential - and act on clear, actionable data without spreadsheets.
@@ -288,12 +257,19 @@ function App() {
         </div>
       </section>
 
-      {/* Trusted Brands Section */}
+      <LogoMarquee />
+
+      <section className="py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-6">
+          <p className="text-center text-sm text-gray-500 mb-8">
+          </p>
+          <LeadForm prefillValue={heroInput} />
+        </div>
+      </section>
+
       <section aria-label="Trust teaser" className="relative mt-20 md:mt-24">
-        {/* Soft divider / skyline */}
         <div className="h-8 bg-gradient-to-b from-transparent to-[#FAFAFB]" />
 
-        {/* Card */}
         <div className="mx-auto max-w-4xl rounded-2xl bg-white ring-1 ring-gray-100 shadow-sm px-6 py-10 md:px-10 md:py-12 text-center">
           <h2 className="text-[22px] md:text-[28px] leading-tight font-semibold text-[#233C42]">
             Trusted by 500+ Leading Brands Worldwide
@@ -304,23 +280,9 @@ function App() {
           </p>
         </div>
 
-        {/* Subtle base gradient to blend into footer */}
         <div className="h-12 md:h-16 bg-gradient-to-b from-[#FAFAFB] to-white" />
       </section>
 
-      {/* Logo Marquee */}
-      <LogoMarquee />
-
-      {/* Lead Form */}
-      <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-6">
-          <p className="text-center text-sm text-gray-500 mb-8">
-          </p>
-          <LeadForm prefillValue={heroInput} />
-        </div>
-      </section>
-
-      {/* Footer */}
       <footer className="bg-gray-50 border-t border-gray-100 py-6">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm text-gray-500">
@@ -335,7 +297,6 @@ function App() {
             </a>
           </p>
 
-          {/* Legal Footer */}
           <div className="mt-3 text-center text-xs text-gray-500">
             <a
               href="https://www.storyclash.com/privacy"
