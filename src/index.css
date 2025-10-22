@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hs-form {
+    @apply w-full;
+  }
+
+  .hs-form label {
+    @apply text-sm font-medium text-[#233C42] mb-1 block;
+  }
+
+  .hs-form input[type="text"],
+  .hs-form input[type="email"],
+  .hs-form input[type="url"],
+  .hs-form input[type="tel"],
+  .hs-form textarea,
+  .hs-form select {
+    @apply w-full appearance-none rounded-xl border border-gray-200 bg-white px-4 py-3 text-[#233C42]
+           placeholder:text-[#233C42]/40 outline-none transition-shadow duration-200
+           focus:ring-2 focus:ring-[#E40DA8]/40 focus:border-[#E40DA8];
+  }
+
+  .hs-form .hs-form-field,
+  .hs-form .hs-form-field > div {
+    @apply mb-4;
+  }
+
+  .hs-form input[type="submit"],
+  .hs-form .hs-button {
+    @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold text-white
+           bg-gradient-to-r from-[#E40DA8] to-[#7424B3] shadow-sm transition-transform duration-200
+           w-full cursor-pointer;
+  }
+
+  .hs-form input[type="submit"]:hover,
+  .hs-form .hs-button:hover {
+    @apply scale-[1.01];
+  }
+
+  .hs-form .hs-error-msgs,
+  .hs-form .hs-error-msg {
+    @apply text-sm text-red-600 mt-1;
+  }
+
+  .hs-form input[type="checkbox"] {
+    @apply align-middle mr-2 rounded border-gray-300 text-[#7424B3] focus:ring-[#7424B3];
+  }
+
+  .hs-form fieldset[disabled] {
+    @apply opacity-70 pointer-events-none;
+  }
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, #E40DA8 0%, #7424B3 100%);
+}
+
+/* Enhanced shadows */
+.shadow-3xl {
+  box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Custom focus states */
+.focus-ring:focus {
+  outline: none;
+  ring: 4px;
+  ring-color: rgba(139, 69, 19, 0.3);
+}
+
+/* Logo Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 50s linear infinite;
+}
+
+/* Accessibility: Reduce motion if preferred */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+  }
+}
+
+/* Animated gradient rail for stepper */
+@keyframes railSweep {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.rail-animated {
+  background: linear-gradient(90deg, #E40DA8, #7424B3, #E40DA8);
+  background-size: 200% 100%;
+  animation: railSweep 6s linear infinite;
+}
+
+/* Subtle drop-shadow for elevated stepper */
+.stepper-elevated {
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
+  border-radius: 16px;
+}
+
+/* CI violet for feature icons @ 40% opacity */
+.icon-muted-violet {
+  color: rgba(116, 36, 179, 0.4);
+}
+
+/* Line animation for how-it-works progress */
+@keyframes how-line {
+  0%   { transform: scaleX(0); transform-origin: left; }
+  100% { transform: scaleX(1); transform-origin: left; }
+}
+.animate-line {
+  animation: how-line 900ms ease-out 100ms both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-line { animation: none; }
+}
+
+/* HubSpot Form Styling */
+.hs-form-frame input,
+.hs-form-frame textarea,
+.hs-form-frame select {
+  border-radius: 8px !important;
+  border: 1px solid #e6e6e6 !important;
+  padding: 10px 14px !important;
+  width: 100% !important;
+  font-size: 15px !important;
+  transition: all 0.2s ease !important;
+}
+
+.hs-form-frame input:focus,
+.hs-form-frame textarea:focus,
+.hs-form-frame select:focus {
+  border-color: #E40DA8 !important;
+  box-shadow: 0 0 0 2px rgba(228, 13, 168, 0.2) !important;
+  outline: none !important;
+}
+
+.hs-form-frame label {
+  font-weight: 500 !important;
+  color: #233C42 !important;
+  font-size: 14px !important;
+  margin-bottom: 8px !important;
+  display: block !important;
+}
+
+.hs-form-frame .hs-button,
+.hs-form-frame input[type="submit"] {
+  background: linear-gradient(90deg, #E40DA8 0%, #7424B3 100%) !important;
+  border-radius: 6px !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  padding: 12px 22px !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: transform 0.2s ease, opacity 0.2s ease !important;
+  font-size: 16px !important;
+  width: 100% !important;
+  margin-top: 8px !important;
+}
+
+.hs-form-frame .hs-button:hover,
+.hs-form-frame input[type="submit"]:hover {
+  transform: scale(1.02) !important;
+  opacity: 0.95 !important;
+}
+
+.hs-form-frame .hs-error-msgs {
+  margin-top: 8px !important;
+  color: #dc2626 !important;
+  font-size: 13px !important;
+}
+
+.hs-form-frame .hs-form-field {
+  margin-bottom: 20px !important;
+}
+
+.hs-form-frame .hs-richtext {
+  color: #4b5563 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+.hs-form-frame .legal-consent-container {
+  margin-top: 16px !important;
+  padding: 16px !important;
+  background: #f9fafb !important;
+  border-radius: 8px !important;
+}
+
+.hs-form-frame .hs-form-booleancheckbox-display {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+}
+
+.hs-form-frame input[type="checkbox"] {
+  width: 18px !important;
+  height: 18px !important;
+  margin-top: 2px !important;
+  cursor: pointer !important;
+}
+
+.hs-form-frame .hs-dependent-field {
+  margin-top: 16px !important;
+}
