@@ -253,7 +253,6 @@ function App() {
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6">
           <p className="text-center text-sm text-gray-500 mb-8">
-            Join leading brands discovering creators with Storyclash AI
           </p>
           <LeadForm prefillValue={heroInput} />
         </div>
