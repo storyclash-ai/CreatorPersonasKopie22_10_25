@@ -171,9 +171,9 @@ function App() {
           {/* Feature Columns */}
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200">
             <div className="py-8 md:py-0 md:px-8 lg:px-12">
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-5">
                 <svg
-                  className="h-9 w-9 text-violet-500 stroke-[3]"
+                  className="h-12 w-12 text-violet-500 stroke-[3.5]"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -183,8 +183,8 @@ function App() {
                 </svg>
 
                 <div>
-                  <h3 className="text-2xl font-semibold tracking-tight text-[#233C42]">
-                    Faster Creator Searches
+                  <h3 className="text-2xl font-semibold tracking-tight text-[#233C42] leading-snug">
+                    Faster Creator<br />Searches
                   </h3>
                   <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[96px]">
                     Use rich persona profiles to automate discovery and surface ideal creators in seconds,
@@ -195,9 +195,9 @@ function App() {
             </div>
 
             <div className="py-8 md:py-0 md:px-8 lg:px-12">
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-5">
                 <svg
-                  className="h-9 w-9 text-violet-500 stroke-[3]"
+                  className="h-12 w-12 text-violet-500 stroke-[3.5]"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -208,8 +208,8 @@ function App() {
                 </svg>
 
                 <div>
-                  <h3 className="text-2xl font-semibold tracking-tight text-[#233C42]">
-                    Grow Revenue per Creator
+                  <h3 className="text-2xl font-semibold tracking-tight text-[#233C42] leading-snug">
+                    Grow Revenue<br />per Creator
                   </h3>
                   <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[96px]">
                     Identify high-performing creators based on what actually drives results in your
@@ -220,9 +220,9 @@ function App() {
             </div>
 
             <div className="py-8 md:py-0 md:px-8 lg:px-12">
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-5">
                 <svg
-                  className="h-9 w-9 text-violet-500 stroke-[3]"
+                  className="h-12 w-12 text-violet-500 stroke-[3.5]"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -232,12 +232,12 @@ function App() {
                 </svg>
 
                 <div>
-                  <h3 className="text-2xl font-semibold tracking-tight text-[#233C42]">
-                    AI-Powered Insights
+                  <h3 className="text-2xl font-semibold tracking-tight text-[#233C42] leading-snug">
+                    AI-Powered Creator<br />Insights
                   </h3>
                   <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[96px]">
-                    Understand why creators match your brand — audience fit, content style, and
-                    engagement potential — and act on clear, actionable data without spreadsheets.
+                    Understand why creators match your brand — audience fit, content style, and engagement
+                    potential — and act on clear, actionable data without spreadsheets.
                   </p>
                 </div>
               </div>
