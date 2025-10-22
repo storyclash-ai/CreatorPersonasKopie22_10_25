@@ -186,90 +186,102 @@ function App() {
           {/* Feature Columns */}
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200">
             <div className="py-8 md:py-0 md:px-8 lg:px-12">
-              <div className="flex items-start gap-6 md:gap-7">
-                <IconBadge>
-                  <svg
-                    className="h-7 w-7 md:h-9 md:w-9 text-violet-600"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M13 4L4 13l5 1 1 5 9-9-6-1 1-5z" />
-                  </svg>
-                </IconBadge>
-
-                <div>
-                  <h3 className="text-2xl font-semibold tracking-tight text-[#233C42] leading-snug">
-                    Faster Creator<br />Searches
-                  </h3>
-                  <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[96px]">
-                    Use rich persona profiles to automate discovery and surface ideal creators in seconds,
-                    so your team can focus on strategy instead of spreadsheets.
-                  </p>
+              <div className="flex flex-col items-center text-center">
+                {/* Icon oben */}
+                <div className="rounded-full p-[2px] bg-gradient-to-br from-[#FF59D2] via-[#A855F7] to-[#6D28D9] shadow-[0_6px_20px_rgba(108,43,217,0.25)] mb-5">
+                  <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center">
+                    <svg
+                      className="h-6 w-6 text-violet-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M13 4L4 13l5 1 1 5 9-9-6-1 1-5z" />
+                    </svg>
+                  </div>
                 </div>
+
+                {/* Überschrift */}
+                <h3 className="text-2xl font-semibold text-[#233C42] leading-snug">
+                  Faster Creator<br />Searches
+                </h3>
+
+                {/* Beschreibung */}
+                <p className="mt-3 text-[#233C42]/80 leading-relaxed max-w-xs">
+                  Use rich persona profiles to automate discovery and surface ideal creators in seconds,
+                  so your team can focus on strategy instead of spreadsheets.
+                </p>
               </div>
             </div>
 
             <div className="py-8 md:py-0 md:px-8 lg:px-12">
-              <div className="flex items-start gap-6 md:gap-7">
-                <IconBadge>
-                  <svg
-                    className="h-7 w-7 md:h-9 md:w-9 text-violet-600"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M3 17l6-6 4 4 8-8" />
-                    <path d="M21 21H3" />
-                  </svg>
-                </IconBadge>
-
-                <div>
-                  <h3 className="text-2xl font-semibold tracking-tight text-[#233C42] leading-snug">
-                    Grow Revenue<br />per Creator
-                  </h3>
-                  <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[96px]">
-                    Identify high-performing creators based on what actually drives results in your
-                    industry. Teams typically see around 20% more revenue per collaboration.
-                  </p>
+              <div className="flex flex-col items-center text-center">
+                {/* Icon oben */}
+                <div className="rounded-full p-[2px] bg-gradient-to-br from-[#FF59D2] via-[#A855F7] to-[#6D28D9] shadow-[0_6px_20px_rgba(108,43,217,0.25)] mb-5">
+                  <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center">
+                    <svg
+                      className="h-6 w-6 text-violet-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M3 17l6-6 4 4 8-8" />
+                      <path d="M21 21H3" />
+                    </svg>
+                  </div>
                 </div>
+
+                {/* Überschrift */}
+                <h3 className="text-2xl font-semibold text-[#233C42] leading-snug">
+                  Grow Revenue<br />per Creator
+                </h3>
+
+                {/* Beschreibung */}
+                <p className="mt-3 text-[#233C42]/80 leading-relaxed max-w-xs">
+                  Identify high-performing creators based on what actually drives results in your
+                  industry. Teams typically see around 20% more revenue per collaboration.
+                </p>
               </div>
             </div>
 
             <div className="py-8 md:py-0 md:px-8 lg:px-12">
-              <div className="flex items-start gap-6 md:gap-7">
-                <IconBadge>
-                  <svg
-                    className="h-7 w-7 md:h-9 md:w-9 text-violet-600"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M9 9a3 3 0 116 0v1h1a3 3 0 013 3v1a6 6 0 01-6 6h-2a6 6 0 01-6-6v-1a3 3 0 013-3h1V9z" />
-                  </svg>
-                </IconBadge>
-
-                <div>
-                  <h3 className="text-2xl font-semibold tracking-tight text-[#233C42] leading-snug">
-                    AI-Powered Creator<br />Insights
-                  </h3>
-                  <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[96px]">
-                    Understand why creators match your brand - audience fit, content style, and engagement
-                    potential - and act on clear, actionable data without spreadsheets.
-                  </p>
+              <div className="flex flex-col items-center text-center">
+                {/* Icon oben */}
+                <div className="rounded-full p-[2px] bg-gradient-to-br from-[#FF59D2] via-[#A855F7] to-[#6D28D9] shadow-[0_6px_20px_rgba(108,43,217,0.25)] mb-5">
+                  <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center">
+                    <svg
+                      className="h-6 w-6 text-violet-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M9 9a3 3 0 116 0v1h1a3 3 0 013 3v1a6 6 0 01-6 6h-2a6 6 0 01-6-6v-1a3 3 0 013-3h1V9z" />
+                    </svg>
+                  </div>
                 </div>
+
+                {/* Überschrift */}
+                <h3 className="text-2xl font-semibold text-[#233C42] leading-snug">
+                  AI-Powered Creator<br />Insights
+                </h3>
+
+                {/* Beschreibung */}
+                <p className="mt-3 text-[#233C42]/80 leading-relaxed max-w-xs">
+                  Understand why creators match your brand - audience fit, content style, and engagement
+                  potential - and act on clear, actionable data without spreadsheets.
+                </p>
               </div>
             </div>
           </div>
