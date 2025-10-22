@@ -69,7 +69,7 @@ function App() {
                 }}
                 className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 shadow-md"
               >
-                ✨ Send me creator matches →
+                ✨ Analyze My Brand →
               </button>
             </div>
 
@@ -92,7 +92,7 @@ function App() {
                   }}
                   className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full text-sm font-semibold text-center shadow-md"
                 >
-                  ✨ Send me creator matches →
+                  ✨ Analyze My Brand →
                 </button>
               </div>
             </div>
@@ -142,7 +142,7 @@ function App() {
                   type="submit"
                   className="h-12 sm:h-14 rounded-2xl px-6 md:px-8 text-base md:text-lg font-medium bg-gradient-to-r from-pink-500 to-violet-600 text-white shadow-md hover:shadow-lg transition-shadow"
                 >
-                  ✨ Send me creator matches →
+                  ✨ Analyze My Brand →
                 </button>
               </form>
 
