@@ -180,7 +180,7 @@ function App() {
 
             <div className="py-8 md:py-0 md:px-8 lg:px-12 text-center md:text-left">
               <TrendingUp className="w-6 h-6 icon-muted-violet mb-4 mx-auto md:mx-0" aria-hidden="true" />
-              <h3 className="text-xl md:text-2xl font-semibold text-[#1B1C1E] mb-3">20% More Revenue Per Creator</h3>
+              <h3 className="text-xl md:text-2xl font-semibold text-[#1B1C1E] mb-3">More Revenue Per Creator</h3>
               <p className="text-[#4A4C57] leading-relaxed">
                 Our algorithm identifies high-performing creators based on what actually drives results in your industry. Customers see 20% more revenue per collaboration.
               </p>
@@ -188,7 +188,7 @@ function App() {
 
             <div className="py-8 md:py-0 md:px-8 lg:px-12 text-center md:text-left">
               <Brain className="w-6 h-6 icon-muted-violet mb-4 mx-auto md:mx-0" aria-hidden="true" />
-              <h3 className="text-xl md:text-2xl font-semibold text-[#1B1C1E] mb-3">AI-Powered Creator Insights</h3>
+              <h3 className="text-xl md:text-2xl font-semibold text-[#1B1C1E] mb-3">AI-Powered Insights</h3>
               <p className="text-[#4A4C57] leading-relaxed">
                 Get instant insights into why specific creators match your brand - including audience fit, content style, and engagement potential. No spreadsheets. Just clear, actionable data.
               </p>
