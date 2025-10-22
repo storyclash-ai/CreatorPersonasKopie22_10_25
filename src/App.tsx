@@ -12,7 +12,7 @@ function IconBadge({ children }: { children: React.ReactNode }) {
       {/* Outer gradient ring */}
       <div className="rounded-full p-[2.5px] bg-gradient-to-br from-[#FF59D2] via-[#A855F7] to-[#6D28D9] shadow-[0_6px_20px_rgba(108,43,217,0.25)]">
         {/* Inner white plate */}
-        <div className="h-16 w-16 md:h-[72px] md:w-[72px] rounded-full bg-white/95 ring-1 ring-black/5 flex items-center justify-center">
+        <div className="h-14 w-14 md:h-16 md:w-16 rounded-full bg-white/95 ring-1 ring-black/5 flex items-center justify-center">
           {children}
         </div>
       </div>
