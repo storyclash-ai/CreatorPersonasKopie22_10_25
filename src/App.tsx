@@ -100,50 +100,56 @@ function App() {
         </div>
       </header>
 
-      <section id="hero" className="relative min-h-[80vh] bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 overflow-hidden">
+      <section id="hero" className="relative isolate bg-gradient-to-b from-white to-[#F8F3FF] pt-28 md:pt-36 lg:pt-40 pb-20 md:pb-28">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-200/30 to-pink-200/30 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-200/20 to-purple-200/20 rounded-full blur-3xl"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-pink-200/20 to-purple-200/20 rounded-full blur-2xl"></div>
         </div>
 
-        <div className="mx-auto max-w-[980px] px-4 pt-56 pb-40 text-center relative z-10">
-          <div className="flex justify-center">
-            <img
-              src="/Storyclash_ai_logo_icons copy.svg"
-              alt="Storyclash AI Icon"
-              className="h-10 w-auto"
-            />
-          </div>
-
-          <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight tracking-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#E40DA8] to-[#7424B3]">Creator</span> Discovery<br />That <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#E40DA8] to-[#7424B3]">Knows</span> Your Brand <br />Better Than You Do
-          </h1>
-
-          <p className="mt-6 text-lg text-gray-500 max-w-[760px] mx-auto leading-relaxed">
-            Our AI decodes your products, competitive landscape, and marketing footprint to extract your brand DNA. Then builds creator personas so accurate, the recommendations feel like mind-reading. Try it out yourself and get creator matches into your inbox.
-          </p>
-
-          <form onSubmit={handleHeroSubmit} className="mt-8">
-            <div className="mx-auto w-full max-w-[560px]">
-              <input
-                type="text"
-                name="domain"
-                placeholder="Enter your domain…"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all duration-300"
-                required
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="mb-6 md:mb-8 flex justify-center">
+              <img
+                src="/Storyclash_ai_logo_icons copy.svg"
+                alt="Storyclash AI Icon"
+                className="h-10 w-auto"
               />
             </div>
-            <button
-              type="submit"
-              className="mt-3 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white text-base font-medium hover:opacity-90 transition-all duration-300 shadow-md"
-            >
-              ✨ Send me creator matches →
-            </button>
-          </form>
 
-          <p className="mt-3 text-xs text-gray-400">
-          </p>
+            <h1 className="text-balance font-semibold tracking-tight text-[#0E1621] leading-[1.06] md:leading-[1.08] lg:leading-[1.08] text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+              <span className="text-pink-500">Creator</span> Discovery<br className="hidden sm:block" />
+              That <span className="bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600 bg-clip-text text-transparent">Knows</span> Your Brand<br className="hidden md:block" />
+              Better Than You Do
+            </h1>
+
+            <p className="mx-auto mt-6 md:mt-8 max-w-2xl text-base sm:text-lg md:text-xl leading-relaxed text-[#233C42]/75">
+              Our AI decodes your products, competitive landscape, and marketing footprint to extract your brand DNA. Then builds creator personas so accurate, the recommendations feel like mind-reading. Try it out yourself and get creator matches into your inbox.
+            </p>
+
+            <div className="mx-auto mt-8 md:mt-10 lg:mt-12 max-w-2xl">
+              <form onSubmit={handleHeroSubmit} className="flex flex-col gap-3 sm:flex-row sm:items-stretch sm:gap-4">
+                <input
+                  type="text"
+                  name="domain"
+                  placeholder="Enter your domain…"
+                  className="flex-1 h-12 sm:h-14 rounded-2xl border border-black/10 bg-white/90 px-4 text-base md:text-lg placeholder:text-[#233C42]/40 shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-300"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="h-12 sm:h-14 rounded-2xl px-6 md:px-8 text-base md:text-lg font-medium bg-gradient-to-r from-pink-500 to-violet-600 text-white shadow-md hover:shadow-lg transition-shadow"
+                >
+                  ✨ Send me creator matches →
+                </button>
+              </form>
+              <p className="mt-3 text-center text-sm text-[#233C42]/55">
+                🔒 Your data is safe. We'll only use it to set up your trial.
+              </p>
+            </div>
+
+            <div className="mt-12 md:mt-16 lg:mt-20"></div>
+          </div>
         </div>
       </section>
 
