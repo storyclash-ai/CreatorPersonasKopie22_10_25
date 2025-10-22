@@ -325,15 +325,40 @@ function App() {
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm text-gray-500">
             Powered by AI • Built by{' '}
-            <a 
-              href="https://storyclash.com" 
-              target="_blank" 
+            <a
+              href="https://storyclash.com"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
             >
               Storyclash.com
             </a>
           </p>
+
+          {/* --- Legal Footer --- */}
+          <div className="mt-3 text-center text-xs text-gray-500">
+            <a
+              href="https://www.storyclash.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-700 transition-colors"
+            >
+              Privacy Policy
+            </a>
+            <span className="mx-2 text-gray-400">|</span>
+            <a
+              href="https://www.storyclash.com/imprint"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-700 transition-colors"
+            >
+              Imprint
+            </a>
+            <span className="mx-2 text-gray-400">|</span>
+            <span className="text-gray-500">
+              © 2025 Storyclash GmbH
+            </span>
+          </div>
         </div>
       </footer>
     </div>
