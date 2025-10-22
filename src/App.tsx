@@ -5,6 +5,21 @@ import LogoMarquee from './components/LogoMarquee';
 import LeadForm from './components/LeadForm';
 import { scrollToLeadForm } from './utils/scrollTo';
 
+// --- Pretty gradient icon badge used in the benefits section ---
+function IconBadge({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="shrink-0">
+      {/* Outer gradient ring */}
+      <div className="rounded-full p-[2.5px] bg-gradient-to-br from-[#FF59D2] via-[#A855F7] to-[#6D28D9] shadow-[0_6px_20px_rgba(108,43,217,0.25)]">
+        {/* Inner white plate */}
+        <div className="h-16 w-16 md:h-[72px] md:w-[72px] rounded-full bg-white/95 ring-1 ring-black/5 flex items-center justify-center">
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [heroInput, setHeroInput] = useState('');
@@ -171,16 +186,21 @@ function App() {
           {/* Feature Columns */}
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200">
             <div className="py-8 md:py-0 md:px-8 lg:px-12">
-              <div className="flex items-start gap-5">
-                <svg
-                  className="h-12 w-12 text-violet-500 stroke-[3.5]"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path d="M13 2L3 14h7l-1 8 11-13h-7l1-7z" />
-                </svg>
+              <div className="flex items-start gap-6 md:gap-7">
+                <IconBadge>
+                  <svg
+                    className="h-7 w-7 md:h-9 md:w-9 text-violet-600"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M13 4L4 13l5 1 1 5 9-9-6-1 1-5z" />
+                  </svg>
+                </IconBadge>
 
                 <div>
                   <h3 className="text-2xl font-semibold tracking-tight text-[#233C42] leading-snug">
@@ -195,17 +215,22 @@ function App() {
             </div>
 
             <div className="py-8 md:py-0 md:px-8 lg:px-12">
-              <div className="flex items-start gap-5">
-                <svg
-                  className="h-12 w-12 text-violet-500 stroke-[3.5]"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path d="M3 17l6-6 4 4 7-7" />
-                  <path d="M21 21H3" />
-                </svg>
+              <div className="flex items-start gap-6 md:gap-7">
+                <IconBadge>
+                  <svg
+                    className="h-7 w-7 md:h-9 md:w-9 text-violet-600"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M3 17l6-6 4 4 8-8" />
+                    <path d="M21 21H3" />
+                  </svg>
+                </IconBadge>
 
                 <div>
                   <h3 className="text-2xl font-semibold tracking-tight text-[#233C42] leading-snug">
@@ -220,16 +245,21 @@ function App() {
             </div>
 
             <div className="py-8 md:py-0 md:px-8 lg:px-12">
-              <div className="flex items-start gap-5">
-                <svg
-                  className="h-12 w-12 text-violet-500 stroke-[3.5]"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path d="M9 9a3 3 0 016 0v1h1a3 3 0 013 3v1a6 6 0 01-6 6h-2a6 6 0 01-6-6v-1a3 3 0 013-3h1V9z" />
-                </svg>
+              <div className="flex items-start gap-6 md:gap-7">
+                <IconBadge>
+                  <svg
+                    className="h-7 w-7 md:h-9 md:w-9 text-violet-600"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M9 9a3 3 0 116 0v1h1a3 3 0 013 3v1a6 6 0 01-6 6h-2a6 6 0 01-6-6v-1a3 3 0 013-3h1V9z" />
+                  </svg>
+                </IconBadge>
 
                 <div>
                   <h3 className="text-2xl font-semibold tracking-tight text-[#233C42] leading-snug">
