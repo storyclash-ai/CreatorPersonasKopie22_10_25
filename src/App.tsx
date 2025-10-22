@@ -118,11 +118,7 @@ function App() {
             </div>
 
             <h1 className="text-balance font-semibold tracking-tight text-[#0E1621] leading-[1.06] md:leading-[1.08] lg:leading-[1.08] text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-              <span className="text-pink-500">Creator</span> Discovery
-              <br className="hidden sm:block" />
-              That <span className="bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600 bg-clip-text text-transparent">Knows</span> Your Brand
-              <br className="hidden md:block" />
-              Better Than You Do
+              Skip the Search. Get the Match.
             </h1>
 
             <p className="mx-auto mt-6 md:mt-8 max-w-2xl text-base sm:text-lg md:text-xl leading-relaxed text-[#233C42]/75">
