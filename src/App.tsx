@@ -236,8 +236,8 @@ function App() {
                     AI-Powered Creator<br />Insights
                   </h3>
                   <p className="mt-3 text-[#233C42]/80 leading-relaxed sm:min-h-[96px]">
-                    Understand why creators match your brand — audience fit, content style, and engagement
-                    potential — and act on clear, actionable data without spreadsheets.
+                    Understand why creators match your brand - audience fit, content style, and engagement
+                    potential - and act on clear, actionable data without spreadsheets.
                   </p>
                 </div>
               </div>
