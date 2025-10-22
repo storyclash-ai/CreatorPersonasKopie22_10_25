@@ -40,11 +40,16 @@ function App() {
           <div className="flex items-center justify-between">
             {/* Logo and Navigation */}
             <div className="flex items-center gap-3">
-              <div className="flex items-center">
+              <div className="flex items-center gap-2">
                 <img
                   src="/Storyclash-ai-grau.svg"
                   alt="Storyclash.ai"
                   className="h-8 w-auto"
+                />
+                <img
+                  src="/assets/Creator Persona alleine.svg"
+                  alt="Creator Personas"
+                  className="h-7 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
               <span className="hidden sm:inline-block text-[#C8C9CF] opacity-70 mx-3 text-lg font-light" aria-hidden="true">|</span>
