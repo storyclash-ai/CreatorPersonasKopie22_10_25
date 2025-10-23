@@ -48,23 +48,23 @@ function App() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <img
-                src="/Storyclash-ai-grau.svg"
-                alt="Storyclash.ai"
-                className="h-7 w-auto"
-              />
-              <div className="border-l border-gray-200 h-5 mx-3" aria-hidden="true"></div>
               <a
                 href="https://www.storyclash.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/assets/Creator Persona alleine.svg"
-                  alt="Creator Personas"
-                  className="h-7 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
+                  src="/Storyclash-ai-grau.svg"
+                  alt="Storyclash.ai"
+                  className="h-7 w-auto"
                 />
               </a>
+              <div className="border-l border-gray-200 h-5 mx-3" aria-hidden="true"></div>
+              <img
+                src="/assets/Creator Persona alleine.svg"
+                alt="Creator Personas"
+                className="h-7 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
+              />
             </div>
 
             <div className="hidden md:block">
