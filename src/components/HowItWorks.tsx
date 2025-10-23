@@ -19,8 +19,8 @@ const steps: Step[] = [
   {
     icon: Tag,
     label: "STEP 1",
-    title: "Enter Your Brand",
-    desc: "Tell us about your brand or website. We analyze your tone, audience, and positioning.",
+    title: "Brand Profile Detection",
+    desc: "With just your brand website, we analyze your products, values, and target audience to build your foundation.",
   },
   {
     icon: Search,
