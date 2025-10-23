@@ -25,27 +25,27 @@ const steps: Step[] = [
   {
     icon: Search,
     label: "STEP 2",
-    title: "Brand Profile Detection",
-    desc: "Our AI builds your brand profile automatically based on how you communicate and perform online.",
+    title: "Marketing Footprint Analysis",
+    desc: "Our AI enhances your profile based on your historical social media and influencer marketing activities.",
     active: true,
   },
   {
     icon: BarChart3,
     label: "STEP 3",
     title: "Market & Competitor Analysis",
-    desc: "We analyze markets, campaigns, and competitors to identify your ideal creator segment.",
+    desc: "We analyze markets, campaigns, and competitors to identify your ideal creator strategy and segments.",
   },
   {
     icon: Users,
     label: "STEP 4",
     title: "Creator Matches",
-    desc: "Instantly see creators that perfectly match your brand's style, audience, and values.",
+    desc: "With rich data insights, our recommendation engine surfaces creators that perfectly match your brand's style, audience, and goals.",
   },
   {
     icon: UserCircle,
     label: "STEP 5",
     title: "Get Brand-Fit Creator Matches",
-    desc: "Receive a ready-to-use list of creators tailored to your brand - instantly, no manual research needed.",
+    desc: "Receive a ready-to-use list of creators tailored to your brand, without filters, settings, or manual research.",
   },
 ];
 
