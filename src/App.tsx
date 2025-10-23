@@ -163,7 +163,7 @@ function App() {
               Automate Creator Discovery and Save 10+ Hours Per Week
             </h2>
             <p className="text-lg text-[#4A4C57] max-w-[700px] mx-auto leading-relaxed">
-              Build reusable creator personas for every product, market, and campaign. Our AI instantly matches you with high-performing influencers while you focus on strategy, not spreadsheets.
+              Build reusable creator personas for every product, market, and campaign. Our AI matches you with high-performing influencers while you focus on strategy, not spreadsheets.
             </p>
           </div>
 
