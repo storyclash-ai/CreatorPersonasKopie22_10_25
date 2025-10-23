@@ -55,7 +55,7 @@ export default function HowItWorks() {
       <div className="bg-white stepper-elevated">
         <header className="text-center pt-10 pb-8 px-6">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-[#233C42]">
-            How Creator Personas Work - From Brand Insight to Perfect Creator Match
+            How Creator Personas Works - From Brand Insight to Perfect Creator Match
           </h2>
           <p className="mt-3 text-[#233C42]/70 max-w-3xl mx-auto">
             Our AI builds your creator persona and instantly connects you with the
